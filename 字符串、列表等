@@ -1,0 +1,36 @@
+#列表可以容纳任意类型和数量的对象,且是可变类型
+gene = []
+gene = list() #这两个都是生成一个空列表
+gene = [1, 2, 3, 'hello', [1, 2, 3]]
+gene.append([4, 5, 6]) #填入内容
+gene
+[1, 2, 3, 'hello', [1, 2, 3], [4, 5, 6]]
+
+gene[1]#索引
+23
+gene[3] = 'world'
+[1, 2, 3, 'world', [1, 2, 3], [4, 5, 6]]
+
+
+
+
+
+#字符串，不可变类型，不支持赋值操作
+line = 'keywords in this paper is bioinformatics'
+#切片：取规定字符
+line[:15]#取前15个字符, 0代表第一个字符位置以此类推
+'keywords in thi'
+line[5:]#取第5个字符后的字符
+'rds in this paper is bioinformatics'
+line[5:15]#取中间的字符
+'rds in thi'
+line[0:40:3] #从0到40每隔3个字符取一个
+'kwditsarsinrts'
+line[-5:]#取后5个字符
+'atics'
+line[::-1]#反转字符
+'scitamrofnioib si repap siht ni sdrowyek'
+line[::-2]#反转字符间隔两个取一个
+'siarfii irppsh isrwe'
+line[-1]取最后一个字符
+'s'
