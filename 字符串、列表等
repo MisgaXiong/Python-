@@ -34,3 +34,20 @@ line[::-2]#反转字符间隔两个取一个
 'siarfii irppsh isrwe'
 line[-1]取最后一个字符
 's'
+
+#字符串使用的一些函数
+
+line.center(60,'@')
+'@@@@@@@@@@keywords in this paper is bioinformatics@@@@@@@@@@'
+#将字符串以多长的字符居中放置，两端空格用@填充
+line.count('i')#计数字符串出现多少次
+6
+line.endswith('k')#查看是否以给定字符串结尾，相应的查看开头函数是startswith
+False
+#find和index函数寻找字符串，upper和lower函数可以将字符串统一大或小写；capitalize函数可以把字符串首字母大写，istitle函数可以判断是否为标题，标题的首字母
+是大写，其他小写，swapcase函数转换大小写。strip函数可以去掉字符串两端的空格、转义符、换行符。rstrip去掉右端，lstrip去掉左端。
+
+
+
+
+
