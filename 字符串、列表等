@@ -2,7 +2,7 @@
 gene = []
 gene = list() #这两个都是生成一个空列表
 gene = [1, 2, 3, 'hello', [1, 2, 3]]
-gene.append([4, 5, 6]) #填入内容
+gene.append([4, 5, 6]) #填入内容或者gene + [4, 5, 6]
 gene
 [1, 2, 3, 'hello', [1, 2, 3], [4, 5, 6]]
 
@@ -10,10 +10,18 @@ gene[1]#索引
 23
 gene[3] = 'world'
 [1, 2, 3, 'world', [1, 2, 3], [4, 5, 6]]
+切片也适用于列表
+gene.clear() #清空
+f_gene = gene.copy() #若f_gene中有独立元素，则在保留原元素基础上copy入新内容
+f_gene
+['Me', 2, 3, 'hello', True, [6, 5]]
 
+f_gene[-1][0] = 17 #f_gene倒数第一个元素是列表，那么这个子列表的第一个元素替换为17
+f_gene
+['Me', 2, 3, 'hello', True, [17, 5]]
 
-
-
+id(f_gene[-1]), id(gene[-1])
+(2653015368520, 2653015368520)#copy后的结果不改变指针
 
 #字符串，不可变类型，不支持赋值操作
 line = 'keywords in this paper is bioinformatics'
