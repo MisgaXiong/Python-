@@ -1,0 +1,20 @@
+>>> b = 28 #if else语句，其中elif可以任意多个，else可有可无
+>>> if b > 50:
+	c = 0.8
+elif b > 20:
+	c = 0.9
+else:
+	c = 1
+
+	
+>>> cost = b * c
+>>> cost
+25.2
+
+if a > 20: #嵌套条件语句
+	if a % 2 == 0:
+		c = 0.6
+	else:
+		c = 0.85
+else:
+	c = 0.7
