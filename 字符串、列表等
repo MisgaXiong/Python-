@@ -23,6 +23,24 @@ f_gene
 id(f_gene[-1]), id(gene[-1])
 (2653015368520, 2653015368520)#copy后的结果不改变指针
 
+a.extend(b) #将列表b拼接到a中
+[1, 2, 'Hello', True, False]
+
+a.insert(4, b) #在列表a的制定位置插入元素，由于b也是一个列表，故作为子列表插入a
+[1, 54, 2, 'Hello', [True, False], True, False]
+
+a.pop(2) #弹出函数，里面的值是索引值，因为2这个索引是在第三个位置上，这个位置上的是2这个数值，就把2弹出。若没有索引则将最后一个元素弹出。
+而remove函数则是输入包含在列表中的元素进行移除，不是索引。
+
+a.sort(reverse=True) #列表，reverse排序反转
+5 in a #判断字符串是否在列表中
+True
+
+
+
+
+
+
 #字符串，不可变类型，不支持赋值操作
 line = 'keywords in this paper is bioinformatics'
 #切片：取规定字符
